@@ -1,6 +1,9 @@
 import { StatusBar } from "expo-status-bar";
 import { Text, View, SafeAreaView, Button } from "react-native";
 function App() {
+  const handleButtonClick = () => {
+    console.log("Button Clicked");
+  };
   return (
     <SafeAreaView className="border border-gray-300">
       <View className="px-3 py-5">
@@ -19,7 +22,7 @@ function App() {
           consequuntur, aliquid quos recusandae ipsa aperiam, similique nisi
           quasi nobis repellendus fuga optio. Accusamus?
         </Text>
-        <Button title="Click Me" className="bg-orange-500 w-1/2 border" />
+        <Button title="Click Me" color={"green"} onPress={handleButtonClick} />
       </View>
     </SafeAreaView>
   );
