@@ -31,6 +31,6 @@ yarn-error.log*
 
 
 
-.eslintrc.json
+.eslintrc.js
 jest.config.js
 .lintstagedrc.js
